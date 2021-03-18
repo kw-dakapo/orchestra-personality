@@ -103,10 +103,13 @@ ul, li {
 .logo {
   height: 2em;
   width: auto;
+  filter: brightness(0.2);
 }
 
 footer {
   width: 100%;
+  min-height: 140px;
+  height: calc( 100vh - 454px );
   text-align: center;
   background-color: #c8b4d0;
   z-index: 10;

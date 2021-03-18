@@ -213,7 +213,7 @@ const resultList = [
       "♪ 하지만 행동이 수동적이며 분위기를 캐치해서 묻어가려는 경향이 큽니다",
     ],
     goodPartner: "세컨드 바이올린",
-    goodPartnerDescription: "세컨드 바이올린은 내집단끼리의 친화력이 \n오케스크라에서 가장 강합니다!",
+    goodPartnerDescription: "세컨드 바이올린은 내집단끼리의 친화력이 \n오케스트라에서 가장 강합니다!",
     badPartner: "트롬본",
     badPartnerDescription: "똑같이 소극적인 사람들끼리는 \n좋은 팀워크가 일어날 수 없습니다..",
   },
