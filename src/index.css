@@ -37,7 +37,7 @@ code {
 }
 body
 {
-  font-family: malang;
+  font-family: malang !important;
   background-color : var(--background);
   color:black;  
 }
@@ -83,7 +83,9 @@ ul, li {
 {
   background: #efa6b6;
   color : black;
-  height: 7em;
+}
+.ksw {
+  color: #efe7d3;
 }
 .title-word
 {
@@ -97,6 +99,19 @@ ul, li {
   margin-top: 1em; 
 }
 
+.logo {
+  height: 2em;
+  width: auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 .survey-subtitle
 {
   color:black;
@@ -106,23 +121,7 @@ ul, li {
   font-size: 1em;
 }
 
-.wall-of-fame
-{
-  margin-top: 5vh;
-  font-size: 2vw; 
-}
-.source
-{
-  position: absolute;
-  bottom: 10vh;
-  font-size: 0.7em; 
-}
-.club-tag
-{
-  position: absolute;
-  bottom: 1vh;
-  
-}
+
 .choice
 {
   border-radius: 0.5em;
@@ -255,6 +254,7 @@ img
   padding: 0; 
 }
 
+
 .row h3
 {
   padding: 0;
@@ -374,7 +374,7 @@ img
 .logo-img
 {
   position: relative;
-  float: right;
+  /* float: right; */
   right: 0;
   width: 30%;
   height: 1.5em;

@@ -2,55 +2,34 @@ import React from 'react';
 
 function FirstPage(props) {
   return (
-    <div class="container page" id="front">
-      <div class="row">
-        <div class="col">
-          <div>재미로 해보는 악기 MBTI</div>
-          <div class="col survey-header">
-            <div class="row survey-title">
-              <div class="col title-word">당신의 성격과 가장 어울리는 악기는?</div>
-            </div>
-            <div class="survey-subtitle">Ver. Da KAPO</div>
-          </div>
-          <button class="waves-effect waves-light btn-small start" onClick={ e => props.onStart(e) }><span>시작하기</span></button>
-
-          <div class="row wall-of-fame">
-            <div class="contribute">
-              <div class="job">
-                [스크립트 코딩]
-                </div>
-              <div class="people">문준석, 김성우</div>
-            </div>
-
-            <div class="contribute">
-              <div class="job">
-                [그림]
-                </div>
-              <div class="people">류성희</div>
-            </div>
-
-            <div class="contribute">
-              <div class="job">
-                [기획]
-                </div>
-              <div class="people">한동화, 전지유, 최정원</div>
-            </div>
-          </div>
-
-
-          <div class="row source">
-            <div class="row source-list">
-              [이미지출처] https://pixabay.com/ko/
-                </div>
-            <div class="row source-list">
-              [이미지출처] https://lso.co.uk/orchestra/players/
-                </div>
-          </div>
+    <div className="container page" id="front">
+      <div className="row">
+        <h6>재미로 해보는 악기 MBTI</h6>
+      </div>
+      <div className="row survey-header">
+        <div className="row survey-title">
+          <div className="col title-word">당신의 성격과 가장 어울리는 악기는?</div>
+          <div className="survey-subtitle">Ver. Da KAPO</div>
         </div>
       </div>
-      <div class="row club-tag">
-        광운대학교 아마추어 오케스트라
-        <img class="logo-img" src="img/logo.png" />
+      <div className="row">
+        <button className="waves-effect waves-light btn-small start" onClick={e => props.onStart(e)}><span>시작하기</span></button>
+      </div>
+      <div className="row mt-5">
+        <p className="job">[스크립트 코딩]</p>
+        <p className="people">문준석<span className="ksw">, 김성우</span></p>
+        <p className="job">[그림]</p>
+        <p className="people">류성희</p>
+        <p className="job">[기획]</p>
+        <p className="people">한동화, 전지유, 최정원</p>
+      </div>
+      <div className="row mt-5">
+        <p className="row">
+          [이미지출처] https://pixabay.com/ko/
+        </p>
+        <p className="row">
+          [이미지출처] https://lso.co.uk/orchestra/players/
+        </p>
       </div>
     </div>
   );

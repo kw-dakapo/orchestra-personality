@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import Question from "../Component/Question"
 import Result from "../Component/Result"
@@ -13,15 +13,13 @@ const user = {
   "감성": 0,
   "강인함": 0,
   "리더십": 0,
+  log: [],
 }
 
 function Poll() {
   const [offset, setOffset] = React.useState(0);
   const [result, setResult] = React.useState({});
   const [showResult, setShowResult] = React.useState(false);
-
-  // useEffect(() => { 
-  //   console.log("Behavior before the component is added to the DOM");}, []);
 
   const moveNext = () => {
     if (offset < questionList.length - 1 ) {
@@ -38,8 +36,10 @@ function Poll() {
     const q = questionList[offset]
     if (q.when === "L") {
       user[q.increase] += 1
-      console.log(resultList)
     }
+    user.log.push({
+      select: "L"
+    })
     moveNext()
   }
   const handleR = e => {
@@ -47,7 +47,19 @@ function Poll() {
     if (q.when === "R") {
       user[q.increase] += 1
     }
+    user.log.push({
+      select: "R"
+    })
     moveNext()
+  }
+
+  const goBack = e => {
+    const q = questionList[offset - 1]
+    const log = user.log.pop()
+    if (log.select === q.when) {
+      user[q.increase] -= 1
+    }
+    setOffset(offset - 1)
   }
 
   return (
@@ -60,6 +72,8 @@ function Poll() {
           { ...questionList[offset] }
           handleL={ e => handleL(e) }
           handleR={ e => handleR(e) }
+          goBack={ e => goBack(e) }
+          idx={ offset }
         />
       }
     </div>

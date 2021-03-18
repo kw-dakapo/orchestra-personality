@@ -35,7 +35,7 @@ const resultList = [
     img: "img/flute.jpg",
     description: [
       "♪ 외향적인 사람들 중에서 가장 감성이 풍부한 성격의 소유자 입니다",
-      "♪ 공감 능력이 매워 뛰어납니다",
+      "♪ 공감 능력이 매우 뛰어납니다",
       "♪ 그만큼 마음도 섬세하고 남에게 신경을 많이 씁니다",
       "♪ 리더가 되면 케어해야할 부분이 너무 많아서 보통 지휘보단 직무를 선택합니다",
     ],
@@ -197,7 +197,7 @@ const resultList = [
       "♪ 자신의 견해에 근거가 있지만 드러내지 않습니다",
       "♪ 주도적인 성격은 아니라서 그냥 흘러가는 주장을 따릅니다",
     ],
-    goodPartner: "플",
+    goodPartner: "플룻",
     goodPartnerDescription: "자신을 잘 캐치해주는 사람을 \n매우 좋아합니다!",
     badPartner: "퍼스트 바이올린",
     badPartnerDescription: "티는 안내지만 하지만 \n자신과 대립하는 사람은 싫어합니다",

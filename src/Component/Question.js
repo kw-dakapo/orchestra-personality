@@ -32,6 +32,14 @@ function Question(props) {
               </div>
             </div>
           </div>
+          {
+            props.idx !== 0 && 
+            <div className="row">
+              <button className="waves-effect waves-light btn-small" onClick={e => props.goBack(e)}>
+                <span className="option">이전 문항으로</span>
+              </button>
+            </div>
+          }          
         </div>
       </div>
     </>
