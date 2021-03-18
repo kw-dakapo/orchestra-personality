@@ -15,8 +15,8 @@ function App() {
       <footer>
         <div  className="container">
           <div className="row">
-            <div className="col-6">광운대학교 아마추어 필하모닉 오케스트라</div>
-            <div className="col-6"><img className="logo" src="img/logo.png" /></div>
+            <div className="col-8">광운대학교 아마추어 필하모닉 오케스트라</div>
+            <div className="col-4"><img className="logo" src="img/logo.png" /></div>
           </div>
         </div>
       </footer>

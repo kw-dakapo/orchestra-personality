@@ -47,7 +47,8 @@ ul, li {
 
 .page
 {
-  margin-top: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 .row
 {
@@ -110,6 +111,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+  background-color: #c8b4d0;
 }
 
 .survey-subtitle
