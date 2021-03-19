@@ -252,6 +252,12 @@ button span
   display: inline;
   color: #404040;
 }
+button {
+  border-top: 2px solid rgb(230, 230, 230);
+  border-left: 2px solid rgb(230, 230, 230);
+  border-right: 2px solid rgb(140, 140, 140);
+  border-bottom: 2px solid rgb(140, 140, 140);
+}
 .last
 {
   margin-top: 2em;
