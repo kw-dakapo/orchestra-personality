@@ -14,7 +14,7 @@ function App() {
       }
       <footer>
         <div  className="container">
-          <div className="row" style={{ textAlign: "center", fontSize: "14px" }}><p>(c) 2021 광운대학교 아마추어 필하모닉 오케스트라 DaKAPO All Rights Reserved</p></div>
+          <div className="row footer-text"><p>(c) 2021 광운대학교 아마추어 필하모닉 오케스트라 DaKAPO All Rights Reserved</p></div>
           <div className="row mt-1"><p><img className="logo" src="img/logo.png" /></p></div>
         </div>
       </footer>

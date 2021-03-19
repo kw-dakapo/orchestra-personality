@@ -109,7 +109,7 @@ ul, li {
 footer {
   width: 100%;
   margin-top: 240px;
-  min-height: 140px;
+  min-height: 100px;
   height: calc(100vh - 694px);
   text-align: center;
   background-color: #c8b4d0;
@@ -130,7 +130,6 @@ footer {
 {
   border-radius: 0.5em;
   background-color: #F6F6F6;
-  margin-bottom: 1em;
 }
 .question
 {
@@ -147,7 +146,6 @@ footer {
 .row .icon
 {   
   padding: 0;
-  line-height: 15em;
   text-align: center;
   
   font-size-adjust: auto; 
@@ -162,7 +160,9 @@ footer {
 .option {
   font-size: 12pt;
 }
-
+.footer-text {
+  font-size: 8pt;
+}
 @media screen and (min-width: 425px) {
   .title-word {
     font-size: 18pt;
@@ -172,6 +172,13 @@ footer {
   }
   .option {
     font-size: 18pt;
+  }
+  .footer-text {
+    font-size: 12pt;
+  }
+  footer {
+    margin-top: 240px;
+    height: calc(100vh - 694px);
   }
 }
 @media screen and (min-width: 768px) {
@@ -184,6 +191,13 @@ footer {
   .option {
     font-size: 18pt;
   }
+  .footer-text {
+    font-size: 14pt;
+  }
+  footer {
+    margin-top: 680px;
+    height: calc(100vh - 1064px);
+  }
 }
 @media screen and (min-width: 1024px) {
   .title-word {
@@ -194,6 +208,13 @@ footer {
   }
   .option {
     font-size: 20pt;
+  }
+  .footer-text {
+    font-size: 16pt;
+  }
+  footer {
+    margin-top: 840px;
+    height: calc(100vh - 1294px);
   }
 }
 
@@ -250,12 +271,13 @@ button span
   padding: 0;
   width: 100%; 
 }
-img
+.img-desc
 {
   width: 100%;
   max-width: 800px;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  height: auto;
 }
 
 
