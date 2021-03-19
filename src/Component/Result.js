@@ -36,7 +36,7 @@ function Result(props) {
           </ul>
         </div>
         <div className="row mb-4">
-          <button className="waves-effect waves-light btn-small" onClick={() => window.location.reload()}>
+          <button className="bgcolor-secondary btn-small" onClick={() => window.location.reload()}>
             <span className="option">테스트 다시하기</span>
           </button>
         </div>

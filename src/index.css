@@ -32,7 +32,7 @@ code {
   --category : #c1a1d3; 
   --list : #6E4468;
   
-  --head-text-color : white;
+  --head-text-color : #202020;;
   --button-text-color : #6E6E6DFF;
 }
 body
@@ -157,11 +157,24 @@ footer {
 .question {
   font-size: 10pt !important;
 }
+.bgcolor-primary {
+  background-color: #d3bbdd;
+}
+.bgcolor-secondary {
+  background-color: #dbdbdb;
+}
+.color-primary {
+  color: #d3bbdd;
+}
+.color-black {
+  color: #404040;
+}
 .option {
   font-size: 12pt;
 }
 .footer-text {
   font-size: 8pt;
+  color: #404040;
 }
 @media screen and (min-width: 425px) {
   .title-word {
@@ -195,7 +208,7 @@ footer {
     font-size: 14pt;
   }
   footer {
-    margin-top: 680px;
+    margin-top: 380px;
     height: calc(100vh - 1064px);
   }
 }
@@ -213,7 +226,7 @@ footer {
     font-size: 16pt;
   }
   footer {
-    margin-top: 840px;
+    margin-top: 440px;
     height: calc(100vh - 1294px);
   }
 }

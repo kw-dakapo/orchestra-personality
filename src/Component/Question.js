@@ -13,7 +13,7 @@ function Question(props) {
               <img className="img-desc" src={props.imgL} />
             </div>
             <div className="row mb-2">
-              <button className="text waves-effect waves-light btn-small" onClick={e => props.handleL(e)}>
+              <button className="text bgcolor-primary btn-small" onClick={e => props.handleL(e)}>
                 <span className="option">{props.optionL}</span>
               </button>
             </div>
@@ -26,7 +26,7 @@ function Question(props) {
               <img className="img-desc" src={props.imgR} />
             </div>
             <div className="row">
-              <button className="text waves-effect waves-light btn-small" onClick={e => props.handleR(e)}>
+              <button className="text bgcolor-primary btn-small" onClick={e => props.handleR(e)}>
                 <span className="option">{props.optionR}</span>
               </button>
             </div>
@@ -38,7 +38,7 @@ function Question(props) {
         props.idx !== 0 &&
         <div className="row mt-5">
           <div className="col-12" style={{ textAlign: "center" }}>
-            <button style={{ width: "100%" }} className="waves-effect waves-light btn-small" onClick={e => props.goBack(e)}>
+            <button style={{ width: "100%" }} className="bgcolor-secondary btn-small" onClick={e => props.goBack(e)}>
               <span className="option">이전 문항으로</span>
             </button>
           </div>

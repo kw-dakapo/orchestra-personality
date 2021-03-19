@@ -13,7 +13,7 @@ function FirstPage(props) {
         </div>
       </div>
       <div className="row">
-        <button className="waves-effect waves-light btn-small start" onClick={e => props.onStart(e)}><span>시작하기</span></button>
+        <button className="bgcolor-primary  btn-small start" onClick={e => props.onStart(e)}><span>시작하기</span></button>
       </div>
       <div className="row mt-5">
         <p className="job">[스크립트 코딩]</p>
